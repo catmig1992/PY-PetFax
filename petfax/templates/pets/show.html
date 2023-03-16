@@ -7,11 +7,21 @@
     <br />
     {{ pet.pet_fact }}
   </div>
-</div>
-<div class="pets-container">
-  <div class="show-pet">
-    <img src="{{ pet.pet_photo }}" alt="Photo of {{ pet.pet_name }}" />
+
+  <div class="pets-container">
+    <div class="show-pet">
+      <img src="{{ pet.pet_photo }}" alt="Photo of {{ pet.pet_name }}" />
+    </div>
+  </div>
+  <div class="pets-container">
+    <div class="links bottom-left">
+      <a href="/pets">&lt;&lt; Go Back</a>
+    </div>
+  </div>
+  <div class="pets-container">
+    <div class="links bottom-left">
+      <a href="/pets/delete/{{ pet.pet_id }}">Delete</a>
+    </div>
   </div>
 </div>
-<a href="/pets">&lt;&lt; Go Back</a>
 {% endblock %}
